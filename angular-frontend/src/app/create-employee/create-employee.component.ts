@@ -27,7 +27,7 @@ export class CreateEmployeeComponent implements OnInit {
 
   save() {
     // @ts-ignore
-    this.employeeService.getEmployee((this.employee.id))
+    this.employeeService.createEmployee((this.employee))
       .subscribe(data => {
         this.employee = new Employee();
         this.errStutas = false;
